@@ -20,7 +20,7 @@ include(ROOT_PATH . "inc/header.php");
 
     <div class="container">
         <div class="starter-template">
-            <h1>Login</h1>
+            <h1>Login v2 git</h1>
             <?php
                if (isset($_POST['login'])) {
                    $try_email = $_POST['email'];
