@@ -76,7 +76,7 @@ $categories = get_all_categories();
                     <ul class="dropdown-menu">
                         <li><a href="#">Manage Users</a></li>
                         <li><a href="#">Manage Products</a></li>
-                        <li><a href="#">Manage Categories</a></li>
+                        <li><a href="../manageCategories.php">Manage Categories</a></li>
                         <li role="separator" class="divider"></li>
                         <li class="dropdown-header">Nav header</li>
                         <li><a href="#">Separated link</a></li>
