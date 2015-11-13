@@ -14,7 +14,6 @@ include(ROOT_PATH . "inc/header.php");
         border: 1px solid #e1e1e8;
         border-radius: 4px;
     }
-
 </style>
 <?php include(ROOT_PATH . "inc/navigation.php"); ?>
 

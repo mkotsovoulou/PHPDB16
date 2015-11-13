@@ -1,6 +1,6 @@
 <?php
 define("BASE_URL","/");
-define("ROOT_PATH","./");
+define("ROOT_PATH", $_SERVER["DOCUMENT_ROOT"]."/");
 define("DB_HOST","students.acg.edu");
 define("DB_NAME","fall2015_demo");
 define("DB_PORT","3306");

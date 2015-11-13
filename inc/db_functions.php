@@ -1,5 +1,4 @@
 <?php
-
 function get_all_products () {
     require(ROOT_PATH . "inc/db.php");
     try {
@@ -78,5 +77,21 @@ function search ($search) {
 
     $products_array = $results->fetchAll (PDO::FETCH_ASSOC);
     return $products_array;
+}
+
+function addCategory($categoryName) {
+     require(ROOT_PATH . "inc/db.php");
+     try {
+         $stmt =
+         $db->prepare("insert into categories (cname) VALUES (?)");
+                     $stmt->bindParam(1, $categoryName, PDO::PARAM_STR);
+                     $stmt->execute();
+                     $count = $stmt->rowCount();
+
+                     if ($count>0) return "Category added ";
+                     else return "Error adding category.";
+          } catch (PDOException $e) {
+                       echo "some insert error..." ;
+            }
 }
 ?>
